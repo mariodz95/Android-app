@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/graph"
+        android:title="Graph"
+        android:icon="@drawable/graph"/>
+    <item android:id="@+id/news"
+        android:title="News"
+        android:icon="@drawable/news"/>
+    <item android:id="@+id/map"
+        android:title="Atm Map"
+        android:icon="@drawable/map"/>
+    <item android:id="@+id/cryptocurrency"
+        android:title="Cryptocurrency"
+        android:icon="@drawable/crypto"/>
+</menu>

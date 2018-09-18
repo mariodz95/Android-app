@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currencies_array_full_name">
+        <item>Euro</item>
+        <item>Albanian lek</item>
+        <item>American Dollar</item>
+        <item>Australian dollar</item>
+        <item>Azerbaijan manat</item>
+        <item>Belarusian ruble</item>
+        <item>Bosnia and Herzegovina convertible mark</item>
+        <item>Brazilian real</item>
+        <item>Bulgarian lev</item>
+        <item>Canadian dollar</item>
+        <item>Chinese Yuan Renminbi</item>
+        <item>Croatian kuna</item>
+        <item>Czech koruna</item>
+        <item>Danish krone</item>
+        <item>Georgian lari</item>
+        <item>Hong Kong dollar</item>
+        <item>Hungarian forint</item>
+        <item>Icelandic krona</item>
+        <item>Indian rupee</item>
+        <item>Japanese yen</item>
+        <item>Mexican peso</item>
+        <item>Moldovan leu</item>
+        <item>New Zealand dollar</item>
+        <item>Norwegian krone</item>
+        <item>Polish zloty</item>
+        <item>Romanian leu</item>
+        <item>Russian ruble</item>
+        <item>Serbian dinar</item>
+        <item>Singapore dollar</item>
+        <item>South African rand</item>
+        <item>South Korean won</item>
+        <item>Swedish krona</item>
+        <item>Swiss franc</item>
+        <item>Turkish lira</item>
+        <item>Ukrainian hryvnia</item>
+        <item>Pound sterling</item>
+        <item>Bitcoin</item>
+        <item>Ethereum</item>
+        <item>XRP</item>
+        <item>Bitcoin Cash</item>
+        <item>EOS</item>
+        <item>Stellar</item>
+        <item>Litecoin</item>
+        <item>Cardano</item>
+        <item>Tether</item>
+        <item>TRON</item>
+        <item>NEO</item>
+        <item>Monero</item>
+        <item>DASH</item>
+        <item>Ethereum Classic</item>
+        <item>NEM</item>
+        <item>Tezos</item>
+        <item>Binance Coin</item>
+        <item>VeChain</item>
+        <item>OmiseGO</item>
+        <item>Zcash</item>
+        <item>Qtum</item>
+        <item>0x</item>
+        <item>Bitcoin Diamond</item>
+        <item>Bytecoin</item>
+        <item>Decred</item>
+        <item>Zilliqa</item>
+        <item>ICON</item>
+        <item>BitShares</item>
+        <item>ISK</item>
+    </string-array>
+</resources>

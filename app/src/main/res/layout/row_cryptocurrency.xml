@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/leftMarginCrypto"/>
+
+    <TextView
+        android:id="@+id/txName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/txShortName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="@dimen/leftMarginCrypto"
+        android:layout_toRightOf="@id/txName"/>
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Price: $"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/rank"
+        android:layout_below="@+id/txName"/>
+
+    <TextView
+        android:id="@+id/txPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tx1"
+        android:layout_below="@id/txName"/>
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rank"
+        android:text="MarketCap: $"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/tx1"/>
+    <TextView
+        android:id="@+id/txMarketCap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txPrice"
+        android:layout_toRightOf="@+id/tx2"/>
+    <TextView
+        android:id="@+id/tx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume 24h: $"
+        android:layout_toRightOf="@+id/rank"
+        android:layout_below="@+id/tx2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:id="@+id/txVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tx3"
+        android:layout_below="@id/txMarketCap"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tx3"
+    android:orientation="horizontal"
+    android:layout_marginLeft="50dp">
+    <TextView
+        android:id="@+id/txPercentChange_01h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/txPercentChange_24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/txPercentChange_7d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>
+</RelativeLayout>
+</android.support.v7.widget.CardView>

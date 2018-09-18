@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraphActivity"
+    android:orientation="vertical"
+    android:background="@color/TealBackground"
+    android:weightSum="3">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="EXCHANGE RATE HISTORY"/>>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/tx"
+    android:layout_weight="1">
+    <Spinner
+        android:id="@+id/spn1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:dropDownWidth="@dimen/spinnerWidth"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/TealBackground"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/swap"
+        android:background="@color/TealBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/swap"
+        android:layout_weight="1"/>
+
+    <Spinner
+        android:id="@+id/spn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:dropDownWidth="@dimen/spinnerWidth"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/TealBackground"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_weight="1" />
+</LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    <RadioGroup
+        android:layout_above="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/TealDark"
+        android:id="@+id/radio">>
+
+        <RadioButton
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Month"
+            android:textColor="@color/white"
+            android:background="@color/TealDark"
+            android:layout_weight="1" />
+        <RadioButton
+            android:id="@+id/month3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="3 Month"
+            android:textColor="@color/white"
+            android:background="@color/TealDark"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Year"
+            android:textColor="@color/white"
+            android:background="@color/TealDark"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+        <com.androidplot.xy.XYPlot
+            style="@style/APDefacto.Light"
+            android:id="@+id/plot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidPlot.graphWidget.marginLeft="15dp"
+
+        >
+    </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+</LinearLayout>
